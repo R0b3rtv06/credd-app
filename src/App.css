@@ -1,0 +1,216 @@
+img {
+  position: relative;
+  animation-name: img;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+/* onclick does still work but it works differently, since we cant make functions anymore, what would i change the functions to? 
+you would either mak
+e a new component or make an arrow function () {}
+
+so is that what the const was for.........................................................
+no the const was to make a variable that holds the data of inline display or none display
+0-0 my head hurts 
+HURTSis 
+
+the img is just the sealy jpg
+the gifs are animated to go with the buttons so it wouldnt conect to the bitton
+
+*/
+}
+
+img {
+  border: 5px;
+  border-color: rgb(204, 17, 17);
+  border-style: solid;
+}
+
+@keyframes img {
+  from {
+      left: 0px;
+  }
+
+  to {
+      left: 1000px;
+  }
+
+}
+
+.two {
+  color: rgb(102, 23, 23);
+  font-family: Andale Mono, monospace;
+  font-weight: 100;
+}
+
+body {
+  background-color: rgb(239, 147, 49);
+}
+
+li {
+  color: rgba(0, 0, 0, 0.674);
+}
+
+h2 {
+  color: rgba(0, 0, 0, 0.736);
+  font-family: Andale Mono, monospace;
+}
+
+h1 {
+  color: rgb(205, 0, 0);
+  font-family: Andale Mono, monospace;
+  text-align: center;
+}
+
+li {
+  text-align: start;
+  font-size: smaller;
+  font-family: Andale Mono, monospace;
+}
+
+h2 {
+  font-size: medium;
+  font-family: Andale Mono, monospace;
+  text-align: left;
+}
+
+h3 {
+  color: rgb(165, 0, 0);
+  text-align: center;
+  font-family: Andale Mono, monospace;
+}
+
+
+
+.gif {
+  position: relative;
+  animation-name: gif;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+}
+
+.gif {
+  border: 20px;
+  border-color: blueviolet;
+}
+
+@keyframes gif {
+  from {
+      left: 0px;
+  }
+
+  to {
+      left: 1000px;
+  }
+}
+
+.gif2 {
+  position: relative;
+  animation-name: gif2;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+}
+
+.gif2 {
+  border: 20px;
+  border-color: blueviolet;
+}
+
+@keyframes gif2 {
+  from {
+      left: 0px;
+  }
+
+  to {
+      left: 1000px;
+  }
+}
+
+
+.gif3 {
+  position: relative;
+  animation-name: gif3;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+}
+
+.gif3 {
+  border: 20px;
+  border-color: blueviolet;
+}
+
+@keyframes gif3 {
+  from {
+      left: 0px;
+  }
+
+  to {
+      left: 1000px;
+  }
+}
+
+/* Media Query code */
+#startbtn1{
+  border-style: groove;
+  background-color: rgb(173, 39, 39);
+  padding: 10;
+  text-align: center;
+  text-decoration: none;
+  display: inline - block;
+  font-size: 1;
+  margin: 1;
+  cursor: pointer;
+  border-color: rgb(248, 162, 70);
+  border-radius: 10;
+  overflow: hidden;
+}
+  @media (max-width: 391px) {
+    .img{
+        animation-name: img;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+    .main-content{
+        margin-top: 250px;
+    }
+    
+    @keyframes img{
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(250px);
+        }
+    
+        100% {
+            transform: translateY(0);
+        }
+    }
+}
+
+@media (max-width: 391px) {
+    .gif{
+        animation-name: gif;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes gif{
+        0% {
+            transform: translateX(0);
+        }
+        50% {
+            transform: translateX(250px);
+        }
+    
+        100% {
+            transform: translateX(0);
+        }
+    }
+}
+
